@@ -96,7 +96,7 @@ public class OpenAiClient {
 
 
     public static void main(String[] args) throws Exception {
-        String apiKey = "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"; // OpenAI API key
+        String apiKey = "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"; // OpenAI API key
         String endpoint = "https://api.openai.com/v1/"; // OpenAI API Endpunkt
 
         OpenAiClient openApi = new OpenAiClient(URI.create(endpoint), apiKey);

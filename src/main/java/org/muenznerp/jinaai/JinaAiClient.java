@@ -62,11 +62,11 @@ public class JinaAiClient {
     }
 
     public static void main(String[] args) throws Exception {
-        String apiKey = "R4yYFvsxqV6Unx6dXuNB:3c6b225c3407473b490ec2c30b4f9a3d92de4c66accbdd479dfa3ec706081f81"; // JinaAI API Key
-        String endpoint = "https://api.scenex.jina.ai/v1/describe"; // JinaAI API Endpunkt
+        String apiKey = "DaDpSyEIc3G2i9UJ7Byk:659e99e5f39406871610b36fd05e28ccb929031eeb5a6dab16deaf3ef67b732d"; // JinaAI API Key
+        String endpoint = "https://api.scenex.jina.ai/v1/describe"; // JinaAI/SceneXplain API Endpunkt
 
         JinaAiClient jina = new JinaAiClient(URI.create(endpoint), apiKey);
-        String result = jina.requestImageDescription(JinaAiClient.class.getClassLoader().getResourceAsStream("test-image-istockphoto-1399967446.png"));
+        String result = jina.requestImageDescription(JinaAiClient.class.getClassLoader().getResourceAsStream("test-image.png"));
 
         System.out.println("Result: " + result);
     }
